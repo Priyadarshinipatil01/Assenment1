@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+
+<body>
+    <h2 class="cal">Calculation</h2>
+  <div class="grid-container">
+    <div class="grid-item" style="width: 75%; margin-left: 12%;">
+      <div class="container">
+        <form action="/action_page.php">
+          <div class="row">
+            <!-- <div class="col-25">
+              <label for="fname">Enter a first number</label>
+            </div> -->
+            <div class="col-75">
+              <input type="text" id="firstNumber" placeholder="Enter first num" required>
+            </div>
+          </div>
+          <div class="row">
+            <!-- <div class="col-25">
+              <label for="lname">Enter a second number : </label>
+            </div> -->
+            <div class="col-75">
+              <input type="text" id="secondNumber" placeholder="Enter second num" required>
+            </div>
+          </div>
+         
+        </form>
+      </div>
+    </div>
+    <div class="grid-item" style="height: 75%;">
+      <div class="add">
+        <button onclick="add()">+</button>
+
+        <button onclick="sub()">-</button>
+
+        <button onclick="mul()">*</button>
+
+        <button onclick="div()">/</button><br />
+      </div>
+    </div>
+    <div class="grid-item1" style="height: 75%; width: 100%;">
+      <div class="result">
+        <p id="result">Result</p>
+      </div>
+    </div>  
+   
+  </div>
+  
+
+  
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
